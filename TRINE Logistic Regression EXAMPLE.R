@@ -1,3 +1,10 @@
+install.packages("car")
+install.packages("mltools")
+install.packages("data.table")
+install.packages("pscl",
+install.packages("caret")
+install.packages("summarytools")
+
 library(car)
 library(mltools)
 library(data.table)
