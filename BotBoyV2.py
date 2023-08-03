@@ -498,7 +498,7 @@ def work():
     webbrowser.open("https://mail.google.com/mail/u/0/#inbox")
     webbrowser.open("https://www.youtube.com/watch?v=xMmbyzZ4nHc")
     time.sleep(15)
-    webbrowser.open("https://columbus.mathplus.online/home")
+    webbrowser.open("https://.online/home")
     tellDay()
     speak("I'm Pulling up your Calender now...")
     webbrowser.open("https://calendar.google.com/calendar/u/0/r?pli=1")
@@ -673,7 +673,7 @@ def currentinventroy():
         extractedPage.save("C:\\Users\\HP\\Output.png")
 
     webhook = DiscordWebhook(
-        url="https://discord.com/api/webhooks/1126136006433841182/6yBecHJdeW2wadK_2hovARKlUo485TXmtTzObjo6Z3DQ8mBG6FjbdAnPpyyITuBslIT7",
+        url="https://discord.com/api/webhook",
         username="Webhook with files",
     )
     # send two images
@@ -3792,7 +3792,7 @@ def Take_query():
         ):
             import wolframalpha
 
-            client = wolframalpha.Client("V4PHXG-YKLJPVJL5V")
+            client = wolframalpha.Client("")
             res = client.query(query)
             try:
                 print(next(res.results).text)
