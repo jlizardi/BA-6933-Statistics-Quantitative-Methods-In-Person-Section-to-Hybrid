@@ -3198,7 +3198,7 @@ def brain():
     import wolframalpha
 
     question = str(takeCommand())
-    app_id = "V4PHXG-YKLJPVJL5V"
+    app_id = ""
     client = wolframalpha.Client(app_id)
     res = client.query(question)
     answer = next(res.results).text
@@ -3278,7 +3278,7 @@ def OpenAIbot():
     from langchain.llms import OpenAI
     from langchain.vectorstores import Chroma
 
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = ''
     # Enable to save to disk & reuse the model (for repeated queries on the same data)
     PERSIST = True
 
@@ -3329,7 +3329,7 @@ def OpenAIbottrine():
     from langchain.llms import OpenAI
     from langchain.vectorstores import Chroma
 
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = ''
     # Enable to save to disk & reuse the model (for repeated queries on the same data)
     PERSIST = True
 
@@ -3380,7 +3380,7 @@ def OpenAIbotdatasci():
     from langchain.llms import OpenAI
     from langchain.vectorstores import Chroma
 
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = ''
     # Enable to save to disk & reuse the model (for repeated queries on the same data)
     PERSIST = True
 
@@ -3431,7 +3431,7 @@ def OpenAIbotingram():
     from langchain.llms import OpenAI
     from langchain.vectorstores import Chroma
 
-    os.environ['OPENAI_API_KEY'] = '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'
+    os.environ['OPENAI_API_KEY'] = ''
     # Enable to save to disk & reuse the model (for repeated queries on the same data)
     PERSIST = True
 
@@ -3816,7 +3816,7 @@ def Take_query():
         elif "calculate" in query:
             import wolframalpha
 
-            app_id = "V4PHXG-YKLJPVJL5V"
+            app_id = ""
             client = wolframalpha.Client(app_id)
             indx = query.lower().split().index("calculate")
             query = query.split()[indx + 1 :]
